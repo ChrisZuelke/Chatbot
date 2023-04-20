@@ -1,0 +1,8 @@
+install nodejs https://nodejs.org/en
+setup nodejs https://www.freecodecamp.org/news/how-to-install-node-js-and-npm-on-windows-2/
+    https://www.geeksforgeeks.org/installation-of-node-js-on-windows/
+    add to path https://support.cpanel.net/hc/en-us/articles/360053317733-Adding-NodeJS-to-your-PATH
+    git https://github.com/nodejs/node-gyp#on-windows
+setup nodejs for vscode https://code.visualstudio.com/docs/nodejs/nodejs-tutorial 
+
+git https://www.youtube.com/watch?v=8X4u9sca3Io

@@ -1,0 +1,11 @@
+https://geekflare.com/ai-apis/
+
+OpenAI's GPT3 Chatgpt API
+Google Natural Language API https://cloud.google.com/natural-language/docs
+Microsofts' Azure Cognitive Services API
+AWS AI Serivces
+Wit.ai
+
+
+
+
