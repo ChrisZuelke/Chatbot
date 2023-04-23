@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import './normal.css';
 
@@ -14,5 +14,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

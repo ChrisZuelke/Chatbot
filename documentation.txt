@@ -6,3 +6,6 @@ setup nodejs https://www.freecodecamp.org/news/how-to-install-node-js-and-npm-on
 setup nodejs for vscode https://code.visualstudio.com/docs/nodejs/nodejs-tutorial 
 
 git https://www.youtube.com/watch?v=8X4u9sca3Io
+
+
+node with https://reactjs.org/
