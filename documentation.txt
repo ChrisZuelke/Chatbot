@@ -9,3 +9,18 @@ git https://www.youtube.com/watch?v=8X4u9sca3Io
 
 
 node with https://reactjs.org/
+
+
+pip install speechrecongnition
+
+https://github.com/openai/whisper
+choco install ffmpeg
+#pip install -U openai-whisper
+#pip install git+https://github.com/openai/whisper.git 
+
+https://pypi.org/project/SpeechRecognition/
+
+
+
+tts
+pip install pyttsx3
