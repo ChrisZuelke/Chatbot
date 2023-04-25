@@ -1,7 +1,6 @@
 #https://medium.com/@g.c.dassanayake/deploying-a-nodejs-application-using-github-actions-e5f4bde7b21b
 
 name: CI
-​
 on:
     push:
         branches: [ master ]
@@ -9,7 +8,7 @@ on:
 jobs:
     deploy:
         runs-on: self-hosted
-    
+
     strategy: 
         matrix:
             node-version: [12.x]
