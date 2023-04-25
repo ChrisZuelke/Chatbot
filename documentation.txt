@@ -24,3 +24,7 @@ https://pypi.org/project/SpeechRecognition/
 
 tts
 pip install pyttsx3
+
+
+yml ci file https://medium.com/@g.c.dassanayake/deploying-a-nodejs-application-using-github-actions-e5f4bde7b21b
+add new runner https://github.com/ChrisZuelke/chriszuelke.github.io/settings/actions/runners/new?arch=x64&os=linux
