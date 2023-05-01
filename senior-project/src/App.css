@@ -22,7 +22,22 @@
   background-color: gray;
 
 
+
 }
+
+.newChatButton {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: left;
+}
+      
+.newChatButton:hover {
+  border: 1px solid gray;
+  background-color: gray;
+}
+
+.inputbox
 
 .App-logo {
   height: 40vmin;
