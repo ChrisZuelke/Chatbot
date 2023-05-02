@@ -1,5 +1,5 @@
 //TODO: add user images gpt, user
-//TODO: format to look good
+//TODO: format to look better
 //TODO: chat history - localstorage/cookies
 //TODO: local storage api key/user - localstorage/cookies
 //TODO: add to git host
