@@ -1,5 +1,4 @@
 #https://medium.com/@g.c.dassanayake/deploying-a-nodejs-application-using-github-actions-e5f4bde7b21b
-
 name: CI
 on:
     push:
