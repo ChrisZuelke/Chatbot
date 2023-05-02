@@ -20,6 +20,7 @@
   flex:1;
   /*border: 1px solid white;*/
   background-color: gray;
+  position: relative;
 
 
 
@@ -37,7 +38,26 @@
   background-color: gray;
 }
 
-.inputbox
+.chatInput {
+  margin: 13px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+.input {
+  background-color: darkgray;
+  color: white;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  
+
+}
 
 .App-logo {
   height: 40vmin;
