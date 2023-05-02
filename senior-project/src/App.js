@@ -5,15 +5,31 @@
 //TODO: add to git host
 //TODO: mobile version
 //TODO: Connect to API
-//TODO: 
+//TODO: envirmental key - remove old api key
 
 
 
 //import logo from './logo.svg';
 import './App.css';
 import './normal.css';
+import { useState, userstate } from 'react';
 
 function App() {
+
+  const [input, setInput] = useState("");
+  const [chatLog, setChatLog] = useState([]);
+
+
+  async function submitInput(e){
+    e.preventDefault();
+    setChatLog([...chatLog, {user: "me", message: `$(input)`}])
+    setInput="";
+
+
+  }
+
+
+
   return (
     <div className="App">
       <aside className="classmenu">
@@ -34,7 +50,10 @@ function App() {
         </div>
       </div>
       <div className="chatInput">
-        <textarea className="input" placeholder="Type your question here" rows="1"></textarea>
+        <form onSubmit={submitInput}>
+          <input className="input" value={input} 
+          onChange={(e)=> setInput(e.target.value)} placeholder="Type your question here" rows="1"></input>
+        </form>
       </div>
       </section>
     </div>
