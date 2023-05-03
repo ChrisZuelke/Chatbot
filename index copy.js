@@ -1,54 +1,50 @@
 //import { Configuration, OpenAIApi } from "openai";
-const { Configuration, OpenAIApi } = require("openai");
-const bodyParser = require('body-parser');
 const express = require('express')
-const cors = require('cors')
-
+const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
     organization: "org-Ba2LMYQtLcq1u7O1cbFpV4eB",
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 //const response = await openai.listEngines();
 
 
+const { Configuration, OpenAIApi } = require("openai");
+const configuration = new configuration({
+    apiKey: process.env.OPEN_API_KEY
+})
 
-//const { Configuration, OpenAIApi } = require("openai");
+const response = await openai.createCompletion({
+    model: "text-davinci-003",
+    prompt: "say HEELLOO world",
+    max_tokens: 9,
+    temperature: 0,
+})
+
 
 //const configuration = new Configuration({
   //apiKey: process.env.OPENAI_API_KEY,
 //});
 //const openai = new OpenAIApi(configuration);
 
-
 const app = express()
-app.use(bodyParser.json())
-app.use(cors())
-
-//app.use(express.json())
-//app.use(express.urlencoded({extended: true}))
-
-
-const port = 3034
+const port = 3033
 
 app.post('/', async (req, res) =>{
-    console.log(message, "message")
-    const { message } = req.body;
-    const response = await openai.createCompletion({
+    //res.send('HHello world')
+    //const completion = await openai.createChatCompletion({
+    const completion = await openai.createCompletion({
         //model: "gpt-3.5-turbo",
         model: "text-davinci-003",
         //Messages: [{role: "user", content: "Hello world"}],
-        prompt: `${message}`,
+        prompt: "what is the most comomon food to eat in america",
         max_tokens: 70,
-        temperature: 0.5,
-    }); 
-    //console.log(message)
-    //console.log(completion.data.choices[0].text);
-
+        temperature: 0,
+    });
     //console.log(completion.data.choices[0].message);
+    console.log(completion.data.choices[0].text);
     res.json({
-        //data: completion.data
-        message: response.data.choices[0].text,
+        data: completion.data
     })
 });
 app.listen(port, () => {
