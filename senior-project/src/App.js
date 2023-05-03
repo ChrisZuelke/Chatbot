@@ -26,8 +26,9 @@ function App() {
   async function handleSubmit(e){
     e.preventDefault();
     console.log(`${input}`)
-    const chatLogNew = [...chatLog, { user: "me", message: `${input}`}]
+    let chatLogNew = [...chatLog, { user: "me", message: `${input}`}]
     setInput("");
+    setChatLog(chatLogNew)
     
     const messages = chatLogNew.map((message) => message.message).join("\n")
     const response = await fetch("http://localhost:3034/", {
