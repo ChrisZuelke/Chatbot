@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   display: flex;
-  background-color: #282c34;
+  background-color: #222232;
   color: white;
   position: absolute;
   top:0;
@@ -9,100 +9,105 @@
   left: 0 ;
   right: 0;
 }
-.classmenu {
-  width: 20%;
+.sidemenu {
+  width: 260px;
   padding: 10px;
   background-color: black;
   /*position: fixed;
   top: 0;*/
 }
-.inputbox {
+.chatbox {
   flex:1;
   /*border: 1px solid white;*/
   background-color: gray;
   position: relative;
 }
-.messages{
-  /*padding: 20px;*/
-  text-align: left;
-  display: flex;
-}
 
-.chatMessage{
-  display: flex;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.AI{
-  color: black;
-}
-
-.newChatButton {
+.side-menu-button {
   padding: 15px;
   border: 1px solid white;
   border-radius: 5px;
   text-align: left;
 }
       
-.newChatButton:hover {
+.side-menu-button:hover {
   border: 1px solid gray;
   background-color: gray;
 }
 
-.chatInput {
+.chat-input-holder {
   margin: 13px;
   padding: 10px;
   position: absolute;
   bottom: 0px;
   left: 0px;
   right: 0px;
-
 }
 
-.input {
+.chat-input-textarea {
   background-color: darkgray;
   color: white;
   padding: 10px;
   width: 90%;
   border-radius: 5px;
   outline: none;
-  
+}
+
+
+.chat-log{
+  padding: 20px;
+  text-align: left;
+  /*display: flex;*/
+}
+
+.chat-message.chatgpt{
+  background-color: rgb(101,101,101);
+}
+
+.chat-message-center {
+  /*max-width: 470px;*/
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 12px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.avatar{
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+
+.avatar.chatgpt{
+  background: green;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.message{
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
+
+
+
+
+
+
+.AI{
+  color: black;
+}
+
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
