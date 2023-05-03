@@ -1,12 +1,14 @@
-//TODO: add user images gpt, user
-//TODO: format to look better
-//TODO: chat history - localstorage/cookies
-//TODO: local storage api key/user - localstorage/cookies
 //TODO: add to git host
 //TODO: mobile version
-//TODO: Connect to API
-//TODO: envirmental key - remove old api key
 //TODO: dark/light theme varients
+
+//TODO: chat history - localstorage/cookies
+//TODO: local storage api key/user - localstorage/cookies
+//TODO: envirmental key - remove old api key
+
+//TODO: format to look better
+//TODO: add user images gpt, user
+//TODO: Connect to API
 
 
 
